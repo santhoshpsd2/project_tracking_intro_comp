@@ -78,8 +78,8 @@ main {
 }
 
 nav {
-  /* display: none; */
-  transform: translateX(-150%);
+  display: none;
+  /* transform: translateX(-150%); */
   position: absolute;
   background-color: #fff;
   left: 1.5rem;
@@ -89,14 +89,14 @@ nav {
   padding: 1.5rem 1rem;
   border-radius: 0.2rem;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
-  transition: transform 0.5s;
+  /* transition: transform 0.5s; */
 }
 
 nav.active {
-  /* display: block; */
-  transform: translateX(0);
-  /* animation: side_anime 0.5s ease-in forwards; */
-  transition: transform 1s;
+  display: block;
+  /* transform: translateX(0); */
+  animation: side_anime 0.5s ease-in forwards;
+  /* transition: transform 1s; */
 }
 
 @keyframes side_anime {
